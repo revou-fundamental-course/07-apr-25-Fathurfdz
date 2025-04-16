@@ -7,6 +7,7 @@ content="width=device-width,initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<script src="script. js"></script>
 <body>
     <!-- Navbar -->
     <header>
@@ -55,10 +56,13 @@ content="width=device-width,initial-scale=1.0">
             <!-- Message Us Section -->
             <section id="message">
                 <h2>Message Us</h2>
+                <div style="display: flex; gap: 30px; ">
+                    <!-- Form -->
                 <form id="messageForm">
                     <label>
                         Name:<br>
                         <input type="text" id="name"></label><br>
+
                         <label>
                             Gender:<br>
                             <select id="gender">
@@ -66,6 +70,7 @@ content="width=device-width,initial-scale=1.0">
                                 <option value="Mrs.">Mrs.</option>
                                 </select>
                             </label><br>
+
                             <label>
                                 Message: <br>
                                 <textarea id="userMessage"></textarea>
@@ -73,6 +78,13 @@ content="width=device-width,initial-scale=1.0">
                                 <button type="submit">Submit</button>
                                 </form>
 
+                                <!-- Tampilan Chat -->
+                                <div id="chatDisplay">
+                                    <h3>Messages:</h3>
+                                    <ul id="chatList"></ul>
+                                </div>
+                </div>
+            </section>
                                 <div id="output"></div></section>
 
             <!-- Footer -->

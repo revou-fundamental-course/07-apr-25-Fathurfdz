@@ -9,6 +9,17 @@ document.getElementById("messageForm").addEventListener("submit", function(e) {
     let gender = document.getElementById("gender").value;
     let message = document.getElementById("userMessage").value;
 
+    const chatList =
+    document.getElementById('chatList');
+    const newMessage = 
+    document.createElement('li');
+    newMessage.textContent = `${gender} ${name} said: "${message}"`;
+    chatList.appendChild(newMessage);
+
+    //reset form
+
+    document.getElementById('messageForm').reset();
+
     let output = `
         Name: ${genderr} ${userName}<br>
         Message: ${message}
